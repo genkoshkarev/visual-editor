@@ -33,8 +33,8 @@
 ```
 
 
-Визуальный редактор:
+### Визуальный редактор:
 ![Alt-текст](https://github.com/genkoshkarev/blog-platform/blob/main/Screen_2.PNG?raw=true "Визуальный редактор")
 
-Визуальный редактор, загрузка картинок
+### Визуальный редактор, загрузка картинок
 ![Alt-текст](https://github.com/genkoshkarev/blog-platform/blob/main/Screen_3.PNG?raw=true "Визуальный редактор, загрузка картинок")
