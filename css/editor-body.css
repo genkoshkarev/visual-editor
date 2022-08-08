@@ -1,0 +1,31 @@
+#editor-body {
+  border: 1px solid #777;
+}
+
+*[contenteditable="true"] {
+  width: 100%;
+}
+#editor-body p[contenteditable="true"],
+#editor-body pre[contenteditable="true"],
+#editor-body h2[contenteditable="true"],
+#editor-body h3[contenteditable="true"],
+#editor-body h4[contenteditable="true"],
+#editor-body li[contenteditable="true"] {
+  padding: 1em;
+  margin: 0;
+}
+#editor-body p[contenteditable="true"],
+#editor-body pre[contenteditable="true"],
+#editor-body li[contenteditable="true"],
+#editor-body cite[contenteditable="true"] {
+  padding: 1em;
+}
+#editor-body *[contenteditable="true"] {
+  display: inline-block;
+}
+.editor-body-post > * {
+  white-space: pre-wrap;
+}
+.article-content a {
+  border-bottom: 1px dotted;
+}

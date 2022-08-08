@@ -1,0 +1,56 @@
+:root {
+  --nav-height: 60px;
+  --base-font: 20px;
+  --font-family-primary: roboto;
+  --font-family-secondary: Charter, Lava, Georgia, sans-serif;
+
+  --width-container: 800px;
+  --width-container-lg: 1000px;
+  --width-container-sm: 650px;
+  --border--radius: 5px;
+
+  --color-primary: #00c49f;
+  --color-primary-dark: #22805b;
+  --color-primary-light: #f1fdf8;
+  --color-primary-bg: #ccffea;
+
+  --color-secondary: #d33a2c;
+  --color-secondary-dark: #a92f23;
+  --color-secondary-light: #ffe7e7;
+
+  --color-text: #333;
+  --color-text-dark: #130d0d;
+  --color-text-light: #555;
+  --color-text-lighter: #bababa;
+
+  --color-bg: #fff;
+  --color-bg-dark: #fff;
+  --color-bg-light: #fff;
+
+  --color-bg-code: #130d0d;
+  --color-code-string: #7ec699;
+  --color-code-html: #e2777a;
+  --color-code-keyword: #cc99cd;
+  --color-code-comment: #555;
+  --color-code-method: #67cdcc;
+  --color-code-number: #f08d49;
+  --color-code-operator: #f8c555;
+
+  --color-neutral1: #f2f2f2;
+  --color-neutral2: #e8e9e9;
+  --color-neutral3: #d1d3d4;
+  --color-neutral4: #babdbf;
+  --color-neutral5: #808488;
+  --color-neutral6: #666a6d;
+  --color-neutral7: #4d5052;
+  --color-neutral8: #212122;
+
+  --color-bg-code: #130d0d;
+  --color-code-string: #7ec699;
+  --color-code-html: #e2777a;
+  --color-code-keyword: #cc99cd;
+  --color-code-comment: #555;
+  --color-code-method: #67cdcc;
+  --color-code-number: #f08d49;
+  --color-code-operator: #f8c555;
+}

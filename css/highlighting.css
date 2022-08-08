@@ -1,0 +1,83 @@
+pre.article-content {
+  background-color: var(--color-bg-code);
+  color: var(--color-neutral3);
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  hyphens: none;
+  width: 100%;
+  /* margin-left: -2%; */
+  padding: 2em 2%;
+  /* border-radius: 1em; */
+  overflow-x: overlay;
+  border-left: 0.5em solid var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .article-content pre {
+    width: 140%;
+    margin-left: -20%;
+    padding: 1em 20%;
+  }
+}
+.article-content .pre__string {
+  color: var(--color-code-string);
+}
+
+.article-content .pre__html {
+  color: var(--color-code-html);
+}
+
+.article-content .pre__keyword {
+  color: var(--color-code-keyword);
+}
+
+.article-content .pre__comment {
+  color: var(--color-code-comment);
+}
+
+.article-content .pre__method {
+  color: var(--color-code-method);
+}
+
+.article-content .pre__number {
+  color: var(--color-code-number);
+}
+
+.article-content .pre__operator {
+  color: var(--color-code-operator);
+}
+
+pre:before {
+  content: "";
+  color: var(--color-secondary);
+  font-size: 0.8em;
+  float: right;
+  margin-top: -0.5em;
+}
+pre.lang-js:before {
+  content: "JS";
+}
+pre.lang-css:before {
+  content: "CSS";
+}
+pre.lang-html:before {
+  content: "HTML";
+}
+pre.lang-go:before {
+  content: "GO";
+}
+pre.lang-python:before {
+  content: "python";
+}
+pre.lang-php:before {
+  content: "PHP";
+}
+pre.lang-java:before {
+  content: "java";
+}

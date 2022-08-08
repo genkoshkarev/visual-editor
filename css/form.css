@@ -1,0 +1,35 @@
+input.input-form:focus,
+input.input-form.active,
+select:focus,
+select.active,
+textarea:focus,
+textarea.active {
+  outline: none;
+  border-color: var(--color-primary);
+}
+input.input-form,
+select,
+textarea {
+  height: 50px;
+  font-size: 16px;
+  border: 2px solid var(--color-neutral3);
+  width: 100%;
+  padding: 12px;
+  font-family: "Poppins";
+  border-radius: var(--border--radius);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+.label-form {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+.input__wrapper {
+  margin-bottom: 30px;
+}
+textarea {
+  resize: vertical;
+  min-height: 117px;
+  white-space: nowrap;
+}

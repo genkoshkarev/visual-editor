@@ -1,0 +1,7 @@
+#editor-events {
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.editor-events-item-description {
+  font-size: 0.6em;
+}

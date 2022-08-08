@@ -1,0 +1,22 @@
+.article-content a {
+  display: inline-block;
+  position: relative;
+  color: #343434;
+  text-decoration: none;
+  padding: 0 6px;
+}
+blockquote.article-content {
+  background: var(--color-primary-light);
+  padding: 1em 2em;
+  /* margin: 1em 0; */
+  font-weight: 500;
+  border-left: 0.5em solid var(--color-primary);
+}
+li.article-content::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "•";
+  font-weight: 900;
+  color: rgb(200, 16, 46);
+}

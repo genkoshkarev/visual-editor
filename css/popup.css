@@ -1,0 +1,28 @@
+.popup.show {
+  display: flex;
+}
+.popup {
+  display: none;
+  background: #555555aa;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  /* opacity: 0.5; */
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.popup-box {
+  width: 100%;
+  max-height: 90vh;
+  max-width: var(--width-container);
+  min-width: 400px;
+  min-height: 200px;
+  background: var(--color-bg);
+  opacity: 1;
+  padding: 2em 2em 1em 2em;
+  overflow-y: auto;
+}

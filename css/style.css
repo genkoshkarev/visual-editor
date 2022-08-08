@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  background: var(--color-bg);
+  font-size: var(--base-font);
+}
+.container {
+  width: 95%;
+  margin: 1em auto;
+  max-width: var(--width-container);
+}
+.maxwidth {
+  max-width: 200px;
+}
+.w100 {
+  width: 100% !important;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.buttons *:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.button {
+  letter-spacing: 2px;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  font: 500 16px/1 "Poppins", sans-serif;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: var(--border--radius);
+  background: var(--color-primary);
+  color: var(--color-bg);
+  position: relative;
+  top: 0;
+  transition: 0.2s ease;
+}
+.button.flat.medium:hover {
+  opacity: 1;
+}
+.button.flat.medium {
+  padding: 13px 18px;
+}
+.button.flat {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  background: var(--color-bg);
+}
+.buttons {
+  margin: 20px 0;
+}
+.buttons > * {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px 0;
+}
+.button:hover,
+.button.hover {
+  /* top: -3px; */
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+}
+.button.flat:hover {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+.button.disabled {
+  opacity: 0.4;
+  user-select: none;
+  pointer-events: none;
+}
+.button.medium {
+  padding: 15px 18px;
+  width: auto;
+  /* margin-right: 20px; */
+  /* margin-bottom: 20px; */
+}
+a.button.small {
+  padding: 10px 12px;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.button.accent3 {
+  background: #f44336;
+}
+.button.small {
+  padding: 10px 12px;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.buttons > *:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.tooltip {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.tooltip.bottom:after {
+  top: 80%;
+  /* transition: opacity 0.3s ease 0.3s,
+    top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s; */
+}
+.tooltip.dark:after {
+  background: var(--color-text-dark);
+  color: var(--color-light);
+}
+.tooltip:after {
+  content: attr(data-tooltip);
+  background: var(--color-neutral2);
+  max-width: 90%;
+  width: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  height: auto;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  color: var(--color-text);
+  text-align: center;
+  animation: enter 0.35s ease infinite alternate;
+}
+.tooltip.bottom:hover:after,
+.tooltip.bottom.hovered:after {
+  top: 130%;
+  opacity: 1;
+}
+.tooltip.bottom:after {
+  top: 80%;
+}
+.tooltip.bottom:before {
+  border-color: transparent transparent #000 transparent;
+  /* transition: opacity 0.3s ease 0.3s, */
+  /* top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s; */
+}
+.tooltip:hover:before {
+  opacity: 1;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  opacity: 0;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  animation: enter 0.35s ease infinite alternate;
+}
+
+@keyframes enter {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
+
+.badges {
+  font-size: 0.8em;
+  padding: 12px 0;
+}
+.badge {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 5px 10px 5px 0;
+  line-height: 1;
+  cursor: pointer;
+}
+.badge::before {
+  content: "x";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  text-align: center;
+  padding: inherit;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s ease;
+  /* margin-left: -5px; */
+}
+.badge:hover::before {
+  opacity: 1;
+}
+.status-blue {
+  background: #e1f5fe;
+  color: #0288d1;
+}
+.status-violet {
+  background: #ede7f6;
+  color: #311b92;
+}
+.status-lagoon {
+  background: #e0f2f1;
+  color: #00796b;
+}
+.status-green {
+  background: #e7f6d5;
+  color: #689f38;
+}
+.status-red {
+  background: #ffdde0;
+  color: #d32f2f;
+}
+
+/* End basic CSS override */
+
+* {
+  scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background-color: #ddd;
+  border: 8px solid var(--color-neutral3);
+}
+.h250 {
+  height: 250px !important;
+}
+.h400 {
+  height: 400px !important;
+}
